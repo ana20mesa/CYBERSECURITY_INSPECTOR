@@ -1,0 +1,105 @@
+.BorderPane-fondo {
+    -fx-background-image: url("../imagenes/Base.png");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+.color1 {
+    -fx-background-color: #1B1418;
+    -fx-background-radius: 40;
+    -fx-border-radius: 40;
+    -fx-border-color: #525252;
+    -fx-border-width: 2;
+    -fx-opacity: 0.9;
+
+}
+
+.color2 {
+    -fx-background-color: #09121F;
+    -fx-background-radius: 40;
+    -fx-border-radius: 40;
+    -fx-border-color: #525252;
+    -fx-border-width: 2;
+    -fx-opacity: 0.9;
+
+}
+
+.color3 {
+    -fx-background-color: #0C1029;
+    -fx-background-radius: 40;
+    -fx-border-radius: 40;
+    -fx-border-color: #525252;
+    -fx-border-width: 2;
+    -fx-opacity: 0.9;
+
+}
+
+.color4 {
+    -fx-background-color: #061623;
+    -fx-background-radius: 40;
+    -fx-border-radius: 40;
+    -fx-border-color: #525252;
+    -fx-border-width: 2;
+    -fx-opacity: 0.9;
+
+}
+
+.tabla-apli {
+
+    -fx-background-color: #061623; /*Color inicial tabla*/
+    -fx-border-color: #16C3CD; /*Color borde*/
+    -fx-border-width: 2px; /*Ancho borde*/
+    -fx-table-cell-border-color: #16C3CD; /*Color interno lineas*/
+    /*-fx-border-radius: 20px;*/
+    /*-fx-background-radius: 20px;*/
+
+}
+
+.tabla-apli .column-header {
+
+    -fx-background-color: #061623;
+    -fx-border-width: 1px;
+    -fx-border-color: #16C3CD;
+}
+
+.tabla-apli .column-header .label { /* Encabezados de tabla */
+
+    -fx-text-fill: #16C3CD; /* Color del texto */
+    -fx-font-size: 13px; /* Tamaño del texto */
+    -fx-font-weight: bold; /* Texto en negrita */
+
+}
+
+.tabla-apli .table-cell {
+    -fx-text-fill: #16C3CD; /*Color texto de la tabla*/
+}
+
+
+.tabla-apli .table-row-cell {
+    -fx-background-color: #061623; /*Color final tabla con datos*/
+}
+
+.tabla-apli .scroll-bar { /* Fondo donde se mueve la barra */
+    -fx-background-color: #061623; /* Fondo del ScrollBar */
+}
+
+.tabla-apli .scroll-bar .thumb { /* Barra que se mueve */
+
+    -fx-background-color: #16C3CD; /* Color de la barra */
+    -fx-background-radius: 8; /* Esquinas redondeadas */
+}
+
+.boton-menu {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+    -fx-background-radius: 8px;
+}
+
+.boton-menu:hover {
+    -fx-opacity: 0.2;
+    -fx-background-color: #EF5752;
+}
+
+
