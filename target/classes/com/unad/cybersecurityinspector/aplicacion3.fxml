@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="aplicacion3" prefHeight="667.0" prefWidth="1142.0" styleClass="color3" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.unad.cybersecurityinspector.FuncionalidadApli3Controller">
+
+    <children>
+
+        <TableView fx:id="tablApli3" layoutX="22.0" layoutY="71.0" prefHeight="442.0" prefWidth="791.0" styleClass="tabla-apli" stylesheets="@../css/styles.css">
+            <columns>
+                <TableColumn fx:id="colTipoC" prefWidth="85.0" text="Tipo" />
+                <TableColumn fx:id="colNombreC" prefWidth="280.0" text="Nombre" />
+                <TableColumn fx:id="colRutaC" prefWidth="320.0" text="Ruta" />
+                <TableColumn fx:id="colHora" prefWidth="100.0" text="Hora" />
+
+            </columns>
+        </TableView>
+        <Label layoutX="389.0" layoutY="534.0" text="ESCANEAR" textFill="#16C3CD" />
+        <Label layoutX="229.0" layoutY="30.0" text="ESCANEO PREVENTIVO DE ALTERACIONES" textFill="#16C3CD">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+
+        <Label alignment="TOP_LEFT" layoutX="834.0" layoutY="154.0" prefHeight="332.0" prefWidth="279.0" text="Monitoreo en tiempo real&#10;&#10;Capacidad  implementada en  diferentes soluciones  de  seguridad,  cada vez  que ocurra un cambio se mostrara un registro titulado  Creado,  Eliminado,  Modificado.&#10;&#10;Detectar ransomware (programa malicioso que secuestra y cifra los datos,  dejandolos inservibles, dañados) se reflejaran registros que indicaran la ruta de los eventos.  &#10;&#10;" textAlignment="JUSTIFY" textFill="#16C3CD" wrapText="true">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="58.0" fitWidth="67.0" layoutX="389.0" layoutY="549.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../imagenes/carpeta.png" />
+            </image>
+        </ImageView>
+
+        <Button layoutX="381.0" layoutY="534.0" mnemonicParsing="false" onAction="#monitorearCarpeta" opacity="0.0" prefHeight="72.0" prefWidth="71.0" text="Escanear" />
+
+    </children>
+
+
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="aplicacion2" prefHeight="667.0" prefWidth="1142.0" styleClass="color2" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.unad.cybersecurityinspector.FuncionalidadesController">
+    <children>
+        <Label layoutX="80.0" layoutY="33.0" text="SISTEMA DE ANALISIS DE SENSIBILIDAD &quot;PDF&quot;" textFill="#16C3CD">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tablApli2" layoutX="22.0" layoutY="71.0" prefHeight="442.0" prefWidth="506.0" styleClass="tabla-apli" stylesheets="@../css/styles.css">
+            <columns>
+                <TableColumn fx:id="colTipoPDF" prefWidth="150.0" text="Tipo" />
+                <TableColumn fx:id="colDescripcionPDF" prefWidth="350.0" text="Valor" />
+
+            </columns>
+        </TableView>
+        <ImageView fitHeight="76.0" fitWidth="73.0" layoutX="239.0" layoutY="556.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../imagenes/pdf.gif" />
+            </image>
+        </ImageView>
+        <Label layoutX="247.0" layoutY="533.0" text="ESCANEAR" textFill="#16C3CD" />
+        <Button layoutX="247.0" layoutY="535.0" mnemonicParsing="false" onAction="#escanearPDF" opacity="0.0" prefHeight="83.0" prefWidth="58.0" text="Escanear" />
+        <ImageView fx:id="alerta" fitHeight="257.0" fitWidth="473.0" layoutX="589.0" layoutY="261.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@../imagenes/alerta.jpg" />
+            </image>
+        </ImageView>
+        <Label fx:id="resultado" alignment="TOP_LEFT" layoutX="612.0" layoutY="316.0" prefHeight="182.0" prefWidth="439.0" textFill="#16C3CD">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="TOP_LEFT" layoutX="579.0" layoutY="33.0" prefHeight="218.0" prefWidth="513.0" text="DLP - Data Loss Prevention (Prevención de Pérdida de Datos)&#10;&#10;El DLP utiliza reglas de negocio y tecnologías de análisis  (como expresiones&#10;regulares, huellas dactilares de datos o inteligencia artificial) para clasificar y&#10;etiquetar información sensible  (como números de tarjetas de crédito, datos&#10;médicos o propiedad intelectual).&#10;&#10;Endpoint: Se instala directamente en las estaciones de trabajo o dispositivos&#10;de los  empleados,  monitoriza la información  que se maneja a  nivel local y&#10;bloquea puertos o subidas a la red si no están permitidas." textAlignment="JUSTIFY" textFill="#16C3CD" wrapText="true">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
